@@ -1,0 +1,56 @@
+$gray-0: #282424;
+$gray-1: lighten($gray-0, 5%);
+$gray-2: lighten($gray-1, 5%);
+$gray-3: lighten($gray-2, 5%);
+$gray-4: lighten($gray-3, 5%);
+$gray-5: lighten($gray-4, 5%);
+$gray-6: lighten($gray-5, 5%);
+$gray-7: lighten($gray-6, 5%);
+$gray-8: lighten($gray-7, 5%);
+$gray-9: lighten($gray-8, 5%);
+$gray-10: lighten($gray-9, 5%);
+
+$white-0: #afafaf;
+$white-1: lighten($white-0, 10%);
+$white-2: lighten($white-1, 10%);
+$white-3: lighten($white-2, 10%);
+
+$error-background-color: rgb(50, 0, 0);
+$error-color: rgb(224, 61, 61);
+
+$success-background-color: rgb(50, 71, 0);
+$success-color: rgb(103, 187, 70);
+
+@mixin code {
+  background-color: $gray-0;
+  color: rgb(228, 228, 228);
+}
+
+@mixin tool-button {
+  background-color: transparent;
+  border: 0;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  line-height: 1;
+  font-family: monospace;
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.025);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.35);
+  }
+}

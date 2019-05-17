@@ -1,0 +1,38 @@
+{
+  "name": "peg-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "chance": "^1.0.18",
+    "codemirror": "^5.40.2",
+    "element-ui": "^2.8.2",
+    "pegjs": "^0.10.0",
+    "splitpanes": "^1.14.2",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@vue/component-compiler-utils": "^3.0.0",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-text": "^0.9.4",
+    "sass": "^1.20.1",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "parcel-plugin-text": {
+    "extentions": [
+      "pegjs",
+      "txt"
+    ]
+  }
+}
