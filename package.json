@@ -1,10 +1,15 @@
 {
   "name": "peg-editor",
   "version": "1.0.0",
-  "description": "",
+  "description": "A PEG editor made with Vue.",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "vue",
+    "pegjs",
+    "peg",
+    "editor"
+  ],
+  "author": "Jesus Veractierta <tribality.tech@gmail.com>",
   "license": "ISC",
   "scripts": {
     "clean": "rm dist/bundle.js",

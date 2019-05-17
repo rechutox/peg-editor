@@ -1,34 +1,25 @@
-# empty-project-babel-sass-vue
+# PEG Editor
 
-Empty project.
+An editor for Pegjs made with Vue and Parcel. With this you can make your own parsers to, for example,
+make your own programming/scripting/template language.
 
-## Building and running on localhost
+## Features
 
-First install dependencies:
+- Tabs, like, in browsers.
+- Save on every action to localStorage.
+- Suports multiple tests on-place per-tab.
+- Syntax highlighting.
+- Dark theme.
 
-```sh
-npm install
-```
+## Todo
 
-To run in hot module reloading mode:
+- Export parser to .js file.
+- Allow edit tab name.
+- A nice logo.
+- Desktop version.
 
-```sh
-npm start
-```
+## Usage
 
-To create a production build:
+As usual, `npm intall` and then `npm start`. It will serve it on `http://localhost:1234`.
 
-```sh
-npm run build-prod
-```
-
-## Running
-
-```sh
-node dist/bundle.js
-```
-
-## Credits
-
-Created with [createapp.dev - an online tool for creating webpack and parcel projects](https://createapp.dev/)
-
+Or! do `npm build` and serve yourself the `dist` folder elsewhere.
