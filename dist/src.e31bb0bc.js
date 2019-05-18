@@ -91686,9 +91686,7 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "App" }, [
     _c("header", { staticClass: "App__header" }, [
-      _c("div", { staticClass: "App__header__title" }, [
-        _vm._v("PEG EDITOR v1.0")
-      ]),
+      _vm._m(0),
       _vm._v(" "),
       _c(
         "div",
@@ -91788,7 +91786,25 @@ exports.default = _default;
       : _vm._e()
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "hbox" }, [
+      _c("img", {
+        staticClass: "App__header__logo",
+        attrs: {
+          src: "/icon.bac3c665.svg",
+          alt: "logo",
+          height: "130px"
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "App__header__title" }, [_vm._v("PEG EDITOR")])
+    ])
+  }
+]
 render._withStripped = true
 
           return {
@@ -91821,7 +91837,7 @@ render._withStripped = true
       
       }
     })();
-},{"pegjs":"../node_modules/pegjs/lib/peg.js","./CodeEditor":"CodeEditor.vue","./TestsPanel":"TestsPanel.vue","./defaultGrammar.pegjs":"defaultGrammar.pegjs","./defaultTests.json":"defaultTests.json","splitpanes/dist/splitpanes.css":"../node_modules/splitpanes/dist/splitpanes.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"index.js":[function(require,module,exports) {
+},{"pegjs":"../node_modules/pegjs/lib/peg.js","./CodeEditor":"CodeEditor.vue","./TestsPanel":"TestsPanel.vue","./defaultGrammar.pegjs":"defaultGrammar.pegjs","./defaultTests.json":"defaultTests.json","./icon.svg":[["icon.bac3c665.svg","icon.svg"],"icon.svg"],"splitpanes/dist/splitpanes.css":"../node_modules/splitpanes/dist/splitpanes.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"../node_modules/vue-hot-reload-api/dist/index.js","vue":"../node_modules/vue/dist/vue.runtime.esm.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -92005,7 +92021,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56655" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49823" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

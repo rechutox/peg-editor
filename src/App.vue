@@ -2,7 +2,10 @@
 <template>
   <div class="App">
     <header class="App__header">
-      <div class="App__header__title">PEG EDITOR v1.0</div>
+      <div class="hbox">
+        <img class="App__header__logo" src="icon.svg" alt="logo" height="130px">
+        <div class="App__header__title">PEG EDITOR</div>
+      </div>
       <div class="App__header__tabs">
         <template v-for="(ws, key) in workspaces">
           <div
@@ -161,6 +164,12 @@ body {
   margin: 0;
 }
 
+.hbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -179,9 +188,15 @@ body {
   border-bottom: 3px solid $gray-5;
 }
 
+.App__header__logo {
+  height: 30px;
+  margin: 0 10px;
+  padding: 10px 0;
+}
+
 .App__header__title {
-  padding: 0 10px;
   margin: 4px 0;
+  text-shadow: 0px 0px 1px black;
 }
 
 .App__header__tabs {

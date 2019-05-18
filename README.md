@@ -15,7 +15,6 @@ make your own programming/scripting/template language.
 
 - Export parser to .js file.
 - Allow edit tab name.
-- A nice logo.
 - Desktop version.
 
 ## Usage

@@ -523,6 +523,12 @@ body {
   margin: 0;
 }
 
+.hbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -541,9 +547,15 @@ body {
   border-bottom: 3px solid #6b6060;
 }
 
+.App__header__logo {
+  height: 30px;
+  margin: 0 10px;
+  padding: 10px 0;
+}
+
 .App__header__title {
-  padding: 0 10px;
   margin: 4px 0;
+  text-shadow: 0px 0px 1px black;
 }
 
 .App__header__tabs {
